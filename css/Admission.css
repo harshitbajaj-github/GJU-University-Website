@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #003366;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo img{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+  /* Navgation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  background-color: #fff;
+  color: #004080;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #eaf3ff;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+/* CONTENT */
+.container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    box-shadow: 0 0 12px #ccc;
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin-bottom: 12px;
+    color: #005bbb;
+    font-size: 22px;
+}
+
+.box ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* DOWNLOAD BUTTON */
+.download-box {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+}
+
+.download-btn {
+    background: #005bbb;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #003f80;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #003366;
+  color: white;
+  padding: 12px;
+  margin-top: 30px;
+}

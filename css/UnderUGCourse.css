@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eef2f7;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #003366;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo img {
+  height: 50px;
+  width: auto;
+}
+
+  /* Navgation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  background-color: #fff;
+  color: #004080;
+}
+
+
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+      color:  #666;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* SEARCH BOX */
+.search-box {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 2px solid #003366;
+}
+
+/* COLLEGE CARDS SECTION */
+.container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.college-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.college-card h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

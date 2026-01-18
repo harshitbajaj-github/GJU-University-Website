@@ -1,0 +1,199 @@
+/* RESET AND GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0057b7;
+}
+
+/* Logo Image */
+nav .logo img {
+  height: 50px;        /* Logo ki height */
+  width: auto;         /* Width aspect ratio maintain */
+  cursor: pointer;
+}
+
+/* Navigation Links */
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  background-color: #fff;
+  color: #004080;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+/* HEADER IMAGE */
+.header-img {
+  background: url('https://gjust.ac.in/portal/Upload/3_18July2025_18-29-58-74.png?h=2087dbb7&itok=FoOOWa1I') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.header-img .header-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-img .header-text p {
+  font-size: 20px;
+}
+
+/* ABOUT & HISTORY SECTION */
+.about-section, .history-section {
+  padding: 50px 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.about-section h2, .history-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0057b7;
+}
+
+.about-section p, .history-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* VISION & MISSION */
+.vm-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+  font-size: 24px;
+  color: #0057b7;
+  margin-bottom: 10px;
+}
+
+/* CAMPUS IMAGES GALLERY */
+.campus-section {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.campus-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0057b7;
+}
+
+.campus-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.campus-images img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0057b7;
+  color: white;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .header-img {
+    height: 300px;
+  }
+  .header-img .header-text h1 {
+    font-size: 28px;
+  }
+  .header-img .header-text p {
+    font-size: 16px;
+  }
+  .vm-section {
+    flex-direction: column;
+  }
+  .campus-images img {
+    width: 90%;
+    height: auto;
+  }
+}
+

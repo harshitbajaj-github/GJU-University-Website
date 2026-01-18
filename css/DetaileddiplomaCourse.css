@@ -1,0 +1,145 @@
+GENERAL RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: #003366;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #0059b3;
+  border-radius: 6px;
+}
+
+/* HEADER IMAGE */
+.header-img {
+  background-image: url('../images/gju.jpg');
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.header-text p {
+  color: white;
+  font-size: 18px;
+}
+
+/* PG COURSES SECTION */
+.pg-courses {
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.course {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.course h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.course h3 {
+  margin-top: 15px;
+  color: #0059b3;
+}
+
+.course ul li {
+  margin: 6px 0;
+}
+
+.course p {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366;
+  color: white;
+  margin-top: 20px;
+}
+/* ADMISSION FORM */
+.admission-form {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px gray;
+}
+
+.admission-form label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+}
+
+.admission-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 12px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.apply-btn:hover {
+  background: #0059b3;
+}

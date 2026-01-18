@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background:#0057b7;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo img{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+  /* Navgation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  background-color: #fff;
+  color: #004080;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+      color:  #666;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px 20px;
+}
+
+nav .logo img {
+  height: 50px;
+  width: auto;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  background-color: #fff;
+  color: #004080;
+} */
+
+.banner {
+    height: 260px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('campus.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 40px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* Buttons Section */
+.course-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn {
+    background: #0056b3;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #003f82;
+}
+
+
+/* Course Sections */
+.course-section {
+    padding: 40px;
+}
+
+.course-section h2 {
+    font-size: 28px;
+    color: #004b8d;
+    margin-bottom: 15px;
+}
+
+.course-box {
+    background: #eef4ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.course-box ul li {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0057b7;
+  color: white;
+  margin-top: 40px;
+}

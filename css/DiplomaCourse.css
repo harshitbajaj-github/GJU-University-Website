@@ -1,0 +1,155 @@
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px 20px;
+}
+
+nav .logo img {
+  height: 50px;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav .nav-links a.active,
+nav .nav-links a:hover {
+  background-color: #fff;
+  color: #004080;
+}
+
+/* HEADER IMAGE */
+.header-img {
+  background: url('https://gjust.digitaluniversity.ac/user/pages/images/slides/aerial01.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 32px;
+}
+
+.header-text p {
+  font-size: 18px;
+}
+
+/* DIPLOMA COURSES SECTION */
+.diploma-courses {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.diploma-courses h2 {
+  font-size: 28px;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card Style */
+.course-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.course-box h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.course-box p {
+  font-size: 16px;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* View Details Button */
+.view-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+/* Card hover effect */
+.course-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-box {
+    width: 80%;
+  }
+}

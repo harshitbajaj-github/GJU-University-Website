@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Teachers - Department Filter</title>
+  <link rel="stylesheet" href="css/Teacher.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR
+  <nav class="navbar">
+    <div class="logo">University</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#teachers">Teachers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav> -->
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="images/gjulogo.png" alt="GJu Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="Teacher.html">TEACHER DEPARTMENT</a></li>
+   
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav> 
+
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Our Esteemed Faculty Members</h1>
+      <p>Filter teachers by department</p>
+    </div>
+  </header>
+
+  <!-- FILTER BUTTONS -->
+  <section id="teachers" class="teachers-section">
+    <h2>Teachers</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-dept="all">All</button>
+      <button class="filter-btn" data-dept="cs">Computer Science</button>
+      <button class="filter-btn" data-dept="electronics">Electronics</button>
+      <button class="filter-btn" data-dept="mechanical">Mechanical</button>
+      <button class="filter-btn" data-dept="civil">Civil</button>
+    </div>
+
+    <!-- TEACHER CARDS -->
+    <div class="teacher-container">
+      <!-- CS -->
+      <div class="teacher-card cs">
+        <img src="https://i.ibb.co/kKj4Lzn/security-guard.jpg" alt="Dr. John Smith">
+        <h3>Dr. John Smith</h3>
+        <p>Professor - CS</p>
+        <p>Email: john.smith@university.edu</p>
+      </div>
+      <div class="teacher-card cs">
+        <img src="https://i.ibb.co/WVL7gsf/cctv.jpg" alt="Dr. Alice Brown">
+        <h3>Dr. Alice Brown</h3>
+        <p>Associate Professor - CS</p>
+        <p>Email: alice.brown@university.edu</p>
+      </div>
+
+      <!-- Electronics -->
+      <div class="teacher-card electronics">
+        <img src="https://i.ibb.co/KV7TtLW/event-security.jpg" alt="Dr. Robert Johnson">
+        <h3>Dr. Robert Johnson</h3>
+        <p>Professor - Electronics</p>
+        <p>Email: robert.johnson@university.edu</p>
+      </div>
+      <div class="teacher-card electronics">
+        <img src="https://i.ibb.co/6Xs6Y2V/fire-safety.jpg" alt="Dr. Emily Davis">
+        <h3>Dr. Emily Davis</h3>
+        <p>Assistant Professor - Electronics</p>
+        <p>Email: emily.davis@university.edu</p>
+      </div>
+
+       <!-- Mechanical -->
+      <div class="teacher-card mechanical">
+        <img src="https://i.ibb.co/7p0qY8h/student-photo.jpg" alt="Dr. Michael Lee">
+        <h3>Dr. Michael Lee</h3>
+        <p>Professor - Mechanical</p>
+        <p>Email: michael.lee@university.edu</p>
+      </div>
+
+      <!-- Civil -->
+      <div class="teacher-card civil">
+        <img src="https://i.ibb.co/7t0Yp7g/university-logo.png" alt="Dr. Sarah Williams">
+        <h3>Dr. Sarah Williams</h3>
+        <p>Assistant Professor - Civil</p>
+        <p>Email: sarah.williams@university.edu</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 University | All Rights Reserved</p>
+    <p>Follow us: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="teachers-filter.js"></script>
+</body>
+</html>
+
+

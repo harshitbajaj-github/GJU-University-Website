@@ -1,0 +1,139 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      color:  #666;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h2 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    nav {
+      background-color: #00172e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20;
+    }
+
+    /* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0057b7;
+} */
+       /* Logo Image */
+    nav .logo img {
+       height: 50px;        /* Logo ki height */
+       width: auto;         /* Width aspect ratio maintain */
+       cursor: pointer;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      background-color: #005f73;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .faculty-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .faculty-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .faculty-card .card-content {
+      padding: 15px;
+    }
+
+    .faculty-card h3 {
+      margin-bottom: 10px;
+      color: #003366;
+      font-size: 1.2em;
+    }
+
+    .faculty-card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #00172e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 8px 0;
+      }
+    }
+  
